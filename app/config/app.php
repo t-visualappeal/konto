@@ -15,6 +15,11 @@ return array(
 
 	'debug' => true,
 
+	'format' => array(
+		'datetime' => 'd/m/Y H:i:s',
+		'date' => 'd/m/Y',
+	),
+
 	/*
 	|--------------------------------------------------------------------------
 	| Application URL

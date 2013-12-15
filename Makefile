@@ -26,6 +26,7 @@ install:
 	@./node_modules/bower/bin/bower install
 	@echo "All dependencies installed."
 	@php artisan migrate
+	@echo "Database set up."
 
 update:
 	@./composer.phar update
