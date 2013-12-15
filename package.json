@@ -1,0 +1,25 @@
+{
+  "name": "konto",
+  "version": "0.1.0",
+  "description": "Display an account history and prediction for the hibiscus server data.",
+  "main": "public/index.php",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/t-visualappeal/konto.git"
+  },
+  "author": "Tim Helfensdörfer <tim@visualappeal.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/t-visualappeal/konto/issues"
+  },
+  "homepage": "https://github.com/t-visualappeal/konto",
+  "dependencies": {
+    "bower": "~1.2.8",
+    "less": "~1.5.1",
+    "uglify-js": "~2.4.7"
+  },
+  "private": true
+}

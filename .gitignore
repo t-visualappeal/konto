@@ -1,0 +1,11 @@
+/bootstrap/compiled.php
+/node_modules
+/public/js/vendor
+/vendor
+
+composer.phar
+composer.lock
+
+*.sublime-*
+
+/public/js/main.min.js

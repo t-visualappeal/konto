@@ -1,0 +1,26 @@
+{
+  "name": "konto",
+  "version": "0.1.0",
+  "authors": [
+    "Tim Helfensdörfer <tim@visualappeal.de>"
+  ],
+  "description": "Display an account history and prediction for the hibiscus server data.",
+  "main": "public/index.php",
+  "license": "MIT",
+  "homepage": "https://github.com/t-visualappeal/konto",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "2.0.*",
+    "semantic": "0.10.*",
+    "sortable": "https://github.com/HubSpot/sortable.git#0.5.*",
+    "highcharts.com": "3.0.*"
+  }
+}
