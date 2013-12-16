@@ -109,38 +109,40 @@ var App = {
 	},
 };
 
-var highchartsOptions = {
-	credits: {
-		enabled: false
-	},
-	colors: [
-		'#A1CF64', // Green
-		'#D95C5C', // Red
-		'#6ECFF5', // Blue
-		'#564F8A', // Purple
-		'#F05940', // Orange
-		'#00B5AD' // Teal
-	],
-	xAxis: {
-		lineColor: '#dddddd'
-	},
-	yAxis: {
-		gridLineColor: '#dddddd'
-	},
-	tooltip: {
-		shadow: false
-	}
-};
+if (typeof Highcharts != 'undefined') {
+	var highchartsOptions = {
+		credits: {
+			enabled: false
+		},
+		colors: [
+			'#A1CF64', // Green
+			'#D95C5C', // Red
+			'#6ECFF5', // Blue
+			'#564F8A', // Purple
+			'#F05940', // Orange
+			'#00B5AD' // Teal
+		],
+		xAxis: {
+			lineColor: '#dddddd'
+		},
+		yAxis: {
+			gridLineColor: '#dddddd'
+		},
+		tooltip: {
+			shadow: false
+		}
+	};
 
-Highcharts.setOptions({
-	lang: {
-		months: App.getMonthNames(),
-		shortMonths: App.getShortMonthNames(),
-		decimalPoint: App.getDecimalPoint(),
-		thousandsSep: App.getThousandsSep(),
-		weekdays: App.getWeekdays()
-	}
-});
+	Highcharts.setOptions({
+		lang: {
+			months: App.getMonthNames(),
+			shortMonths: App.getShortMonthNames(),
+			decimalPoint: App.getDecimalPoint(),
+			thousandsSep: App.getThousandsSep(),
+			weekdays: App.getWeekdays()
+		}
+	});
+}
 
 $(function() {
 	var $accountHistoryChart = $('#account-history-chart');

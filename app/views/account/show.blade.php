@@ -32,7 +32,7 @@
 					<td>{{{ $turnover->to_accountnr }}}</td>
 					<td data-value="{{ $turnover->date_booking->format('U') }}">{{ $turnover->date_booking->format(Config::get('app.format.date')) }}</td>
 					<td>{{{ $turnover->type }}}</td>
-					<td><a href="{{ URL::action('TurnoverController@view', array('id' => $turnover->id)) }}" title="{{{ $turnover->purpose }}}">{{{ $turnover->value }}}</a></td>
+					<td><a href="{{ URL::to('turnover.show', array('id' => $turnover->id)) }}" title="{{{ $turnover->purpose }}}">{{{ $turnover->value }}}</a></td>
 				</tr>
 			@endforeach
 		</tbody>

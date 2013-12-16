@@ -14,11 +14,11 @@ class AccountController extends BaseController
 		));
 	}
 
-	public function view($id)
+	public function show($id)
 	{
 		$account = Account::with('turnovers')->findOrFail($id);
 
-		return View::make('account.view', array(
+		return View::make('account.show', array(
 			'account' => $account,
 		));
 	}

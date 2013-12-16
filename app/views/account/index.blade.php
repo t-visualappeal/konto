@@ -14,7 +14,7 @@
 					<div class="ui label <?php if ($account->balance >= 0): ?>green<?php else: ?>red<?php endif; ?>">{{ $account->balanceWithCurrency }}</div>
 				</div>
 				<div class="content">
-					<a class="header" href="{{ URL::action('AccountController@view', array('id' >= $account->id)) }}">{{{ $account->name }}} ({{{ $account->nr }}} - {{{ $account->type }}})</a>
+					<a class="header" href="{{ URL::route('account.show', array('id' >= $account->id)) }}">{{{ $account->name }}} ({{{ $account->nr }}} - {{{ $account->type }}})</a>
 					<div class="description">{{ trans('account.index.last_update') }}: {{ $account->balance_date->format(Config::get('app.format.datetime')) }}</div>
 				</div>
 			</div>

@@ -73,7 +73,7 @@ class Turnover extends Eloquent
 	 */
 	public function getTypeAttribute($value)
 	{
-		return ucfirst(strtolower($value));
+		return ucwords(strtolower($value));
 	}
 
 	/**
